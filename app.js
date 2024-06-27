@@ -18,7 +18,9 @@ async function main() {
 }
 
 // middlewares
-app.use(cors());
+app.use(cors({
+  origin: 'https://where-s-waldo-lilac.vercel.app/',
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
