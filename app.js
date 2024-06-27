@@ -37,6 +37,8 @@ app.use(function (err, req, res, next) {
   res.json({ message: err.message, error: err });
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-})
+// app.listen(3000, () => {
+//   console.log('Server is running on port 3000');
+// })
+
+module.exports = app;
